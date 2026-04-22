@@ -21,10 +21,12 @@ void	solve(const std::vector<std::string> &argz) {
 		return std::println("");
 
 	for (const std::string &s : argz)
-		if (to_lower(s) == "--version")
+		if (s == "--")
+			break;
+		else if (to_lower(s) == "--version")
 			return std::println(std::cerr, "{}", version);
 
-	if (argz.size() == 2uz && to_lower(argz[0uz]) == "shark" && to_lower(argz[1uz]) == "rapeter")
+	if (argz.size() == 2uz && to_lower(argz[0uz]) == "shark" && to_lower(argz[1uz]) == "rapeter" || argz.size() == 3uz && to_lower(argz[0uz]) == "shark" && to_lower(argz[1uz]) == "and" && to_lower(argz[2uz]) == "rapeter")
 		return std::println("职业大魔王 killer");
 
 	std::string cmd = "gnuecho";
