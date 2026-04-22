@@ -32,7 +32,7 @@ void	solve(const std::vector<std::string> &argz) {
 	std::string cmd = "gnuecho";
 
 	for (std::size_t x = 0uz; x < argz.size(); ++x)
-		cmd = std::format("{} {}", cmd, argz[x]);
+		cmd = std::format("{} \"{}\"", cmd, argz[x]);
 
 	auto _ = std::system(cmd.c_str());
 }
