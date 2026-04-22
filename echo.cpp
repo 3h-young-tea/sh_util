@@ -15,7 +15,7 @@ std::string to_lower(const std::string &s) {
 }
 
 void	solve(const std::vector<std::string> &argz) {
-	std::string version = "echo (lil_tea) 7890\nWritten by lil_tea\nCopyright (C) 1995 lil_tea\nLicense AGPLv3+: GNU AGPL version 3 or later <https://github.com/3h-young-tea/sh_util>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.";
+	std::string version = "echo (lil_tea) 1.0\nWritten by lil_tea\nCopyright (C) 2026 lil_tea\nLicense AGPLv3+: GNU AGPL version 3 or later <https://github.com/3h-young-tea/sh_util>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.";
 
 	if (argz.size() == 0uz)
 		return std::println("");
