@@ -1,2 +1,3 @@
-# sh_util
-just for fun
+#	sh_util
+
+why ubuntu use rust? i use gnu!
